@@ -1,0 +1,20 @@
+{
+  "name": "project-8-recipe-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gato365/project-8-recipe-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gato365/project-8-recipe-app/issues"
+  },
+  "homepage": "https://github.com/gato365/project-8-recipe-app#readme"
+}
