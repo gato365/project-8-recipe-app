@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/gato365/project-8-recipe-app/issues"
   },
-  "homepage": "https://github.com/gato365/project-8-recipe-app#readme"
+  "homepage": "https://github.com/gato365/project-8-recipe-app#readme",
+  "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.5.0",
+    "nodemon": "^2.0.22",
+    "react-router-dom": "^6.10.0"
+  }
 }
