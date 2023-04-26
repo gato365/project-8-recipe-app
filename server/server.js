@@ -1,16 +1,22 @@
 const express = require('express');
-// const colors = require('colors');
-// const dotenv = require('dotenv').config();
-// const {errorHandler} = require('./middleware/errorMiddleware');
-const connectDB = require('./config/db');
-const port = process.env.PORT || 5000;
+const db = require('./config/connection');
+const routes = require('./routes');
 
-connectDB();
 
+const PORT = process.env.PORT || 3001;
 const app = express();
-// Location Matters Here
+
+
+
+// Express middleware
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(routes);
 
+db.once('open', () => {
+    app.listen(PORT, () => {
+        console.log(`API server running on port ${PORT}!`);
+        console.log(`Here is the link http://localhost:${PORT}`)
+    });
 
-app.listen(port, () => console.log(`Server started on port ${port}`)); 
+});
