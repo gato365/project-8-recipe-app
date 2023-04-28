@@ -1,4 +1,4 @@
-const { Cuisine, Recipe } = require('../models');
+const { Cuisine } = require('../models');
 
 const cuisineController = {
   // Get all cuisines
@@ -6,8 +6,9 @@ const cuisineController = {
     try {
       const allCuisines = await Cuisine.find({});
       res.json(allCuisines);
+      console.log('getAllCuisines');
     } catch (err) {
-      res.status(400).json(err);
+      res.status(401).json(err);
     }
   },
 
@@ -25,19 +26,7 @@ const cuisineController = {
     }
   },
 
-  // Get all recipes associated with a specific cuisine type
-  async getRecipesByCuisine(req, res) {
-    try {
-      const cuisine = await Cuisine.findById(req.params.cuisineId).populate('recipes');
-      if (!cuisine) {
-        res.status(404).json({ message: 'No cuisine found with this id!' });
-        return;
-      }
-      res.json(cuisine.recipes);
-    } catch (err) {
-      res.status(400).json(err);
-    }
-  }
+ 
 };
 
 module.exports = cuisineController;

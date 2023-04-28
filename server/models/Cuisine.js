@@ -14,10 +14,9 @@ const cuisineSchema = new Schema({
         unique: true,
         trim: true
     },
-    recipes: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Recipe'
-        }
-    ]
+    description: {
+        type: String,
+    }
 });
+
+module.exports = model('Cuisine', cuisineSchema);

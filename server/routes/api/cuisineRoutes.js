@@ -9,7 +9,7 @@ const router = require('express').Router();
 const {
   getAllCuisines,
   getCuisineById,
-  getRecipesByCuisine
+ 
 } = require('../../controllers/cuisine-controller');
 
 // Set up GET all at /api/cuisines
@@ -22,9 +22,6 @@ router
   .route('/:id')
   .get(getCuisineById);
 
-// Set up GET all recipes at /api/cuisines/:cuisineId/recipes
-router
-  .route('/:cuisineId/recipes')
-  .get(getRecipesByCuisine);
+
 
 module.exports = router;
