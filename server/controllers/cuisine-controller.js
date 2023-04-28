@@ -6,7 +6,6 @@ const cuisineController = {
     try {
       const allCuisines = await Cuisine.find({});
       res.json(allCuisines);
-      console.log('getAllCuisines');
     } catch (err) {
       res.status(401).json(err);
     }
