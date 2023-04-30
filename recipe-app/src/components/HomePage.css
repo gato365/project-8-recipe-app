@@ -17,3 +17,22 @@
   margin-left: -15px;
   margin-right: -15px;
 }
+
+
+/* HomePage.css */
+
+.section-container {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  

@@ -1,9 +1,10 @@
 import React from 'react';
 
-// Image component
-function Image(props) {
+function Image({ src, alt, width, height }) {
   return (
-    <img src={props.src} alt={props.alt} />
+    <div className="image-container">
+      <img src={src} alt={alt} style={{ width: width, height: height }} />
+    </div>
   );
 }
 

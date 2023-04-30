@@ -7,7 +7,8 @@ import './HomePage.css';
 function HomePage() {
   return (
     <div>
-      <Image src="recipe.jpg" alt="Recipe Image" />
+      <h1>World's Top Recipe</h1>
+      <Image src="recipe.jpg" alt="Recipe Image" width="350px" height="350px"/>
 
       <div className="section-container">
         <Section title="Top Stories">
