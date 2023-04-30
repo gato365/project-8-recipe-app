@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix recipe-app",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -18,8 +21,11 @@
   },
   "homepage": "https://github.com/gato365/project-8-recipe-app#readme",
   "dependencies": {
+    "concurrently": "^8.0.1",
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "mongodb": "^4.5.0",
+    "mongoose": "^7.1.0",
     "nodemon": "^2.0.22"
   }
 }

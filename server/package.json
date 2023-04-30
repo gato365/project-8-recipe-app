@@ -17,6 +17,7 @@
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^4.5.0",
-    "mongoose": "^7.0.5"
+    "mongoose": "^7.0.5",
+    "nodemon": "^2.0.22"
   }
 }
