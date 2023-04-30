@@ -11,3 +11,5 @@ function Section(props) {
     </section>
   );
 }
+
+export default Section;

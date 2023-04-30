@@ -9,3 +9,5 @@ function Article(props) {
     </article>
   );
 }
+
+export default Article;
