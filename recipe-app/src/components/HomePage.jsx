@@ -9,21 +9,21 @@ function HomePage() {
       <Image src="recipe.jpg" alt="Recipe Image" />
 
       <Section title="Top Stories">
-        <Article title="Story Title 1" content="Story content goes here." />
-        <Article title="Story Title 2" content="Story content goes here." />
-        <Article title="Story Title 3" content="Story content goes here." />
+        <Article image="story1.jpg" title="Story Title 1" content="Story content goes here." />
+        <Article title="Story Title 2" content="Story content goes here." image="story2.jpg" />
+        <Article image="story3.jpg" title="Story Title 3" content="Story content goes here." />
       </Section>
 
       <Section title="Stories">
-        <Article title="Story Title 4" content="Story content goes here." />
-        <Article title="Story Title 5" content="Story content goes here." />
-        <Article title="Story Title 6" content="Story content goes here." />
+        <Article title="Story Title 4" content="Story content goes here." image="story4.jpg" />
+        <Article image="story5.jpg" title="Story Title 5" content="Story content goes here." />
+        <Article title="Story Title 6" content="Story content goes here." image="story6.jpg" />
       </Section>
 
       <Section title="Features">
-        <Article title="Feature Title 1" content="Feature content goes here." />
-        <Article title="Feature Title 2" content="Feature content goes here." />
-        <Article title="Feature Title 3" content="Feature content goes here." />
+        <Article image="feature1.jpg" title="Feature Title 1" content="Feature content goes here." />
+        <Article title="Feature Title 2" content="Feature content goes here." image="feature2.jpg" />
+        <Article image="feature3.jpg" title="Feature Title 3" content="Feature content goes here." />
       </Section>
     </div>
   );

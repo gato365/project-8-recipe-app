@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* App.css */
+
+/* Apply a reset to remove any default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply styles to the main container */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Apply styles to the top-level sections */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Apply styles to the article containers */
+.article-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Apply styles to the individual articles */
+.article {
+  width: 48%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Apply styles to the images */
+.article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Apply styles to the vertical line */
+.vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
