@@ -24,8 +24,30 @@ function SignupForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    // handle signup form submission
+    if (password !== confirmPassword) {
+      alert('Passwords do not match');
+      return;
+    }
+    // send the form data to the server
+    fetch('/api/signup', {
+      method: 'POST',
+      body: JSON.stringify({ username, email, password }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          alert('Successfully signed up!');
+        } else {
+          throw new Error('Sign up failed');
+        }
+      })
+      .catch(error => {
+        alert(error.message);
+      });
   }
+  
 
   return (
     <form onSubmit={handleSubmit}>
