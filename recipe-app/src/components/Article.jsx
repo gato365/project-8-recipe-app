@@ -1,11 +1,17 @@
 import React from 'react';
 
 // Article component
-function Article(props) {
+function Article({ title, content, image, width, height }) {
+  const imgStyle = {
+    width: width || 'auto',
+    height: height || 'auto'
+  };
+
   return (
     <article>
-      <h3>{props.title}</h3>
-      <p>{props.content}</p>
+      {image && <img src={image} alt={title} style={imgStyle} />}
+      <h3>{title}</h3>
+      <p>{content}</p>
     </article>
   );
 }

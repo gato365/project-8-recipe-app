@@ -8,29 +8,29 @@ function HomePage() {
   return (
     <div>
       <h1>World's Top Recipe</h1>
-      <Image src="recipe.jpg" alt="Recipe Image" width="350px" height="350px"/>
+      <Image src="recipe.jpg" alt="Delicious Pasta Dish" width="350px" height="350px"/>
 
       <div className="section-container">
+        <Section title="Top Recipes">
+          <Article image="pizza.jpg"  title="Mouth-Watering Pizza" content="Try our amazing homemade pizza recipe, topped with fresh ingredients." width="200px" height="200px" />
+          <Article title="Delectable Sushi" content="Master the art of sushi-making with our step-by-step guide." image="sushi.jpg" width="200px" height="200px" />
+          <Article image="tacos.jpg" title="Tasty Tacos" content="Enjoy a Mexican night with our delicious and easy taco recipe." width="200px" height="200px" />
+        </Section>
+
+        <div className="vertical-line"></div>
+
         <Section title="Top Stories">
-          <Article image="story1.jpg" title="Story Title 1" content="Story content goes here." />
-          <Article title="Story Title 2" content="Story content goes here." image="story2.jpg" />
-          <Article image="story3.jpg" title="Story Title 3" content="Story content goes here." />
+          <Article title="Kitchen Innovations" content="Discover the latest kitchen gadgets that will make cooking a breeze." image="kitchen.jpg" width="200px" height="200px" />
+          <Article image="baking.jpg" title="The Art of Baking" content="Learn the secrets of professional bakers and impress your friends." width="200px" height="200px" />
+          <Article title="Food Sustainability" content="Find out how to reduce waste and support a sustainable food system." image="food_sus.jpg" width="200px" height="200px" />
         </Section>
 
         <div className="vertical-line"></div>
 
-        <Section title="Stories">
-          <Article title="Story Title 4" content="Story content goes here." image="story4.jpg" />
-          <Article image="story5.jpg" title="Story Title 5" content="Story content goes here." />
-          <Article title="Story Title 6" content="Story content goes here." image="story6.jpg" />
-        </Section>
-
-        <div className="vertical-line"></div>
-
-        <Section title="Features">
-          <Article image="feature1.jpg" title="Feature Title 1" content="Feature content goes here." />
-          <Article title="Feature Title 2" content="Feature content goes here." image="feature2.jpg" />
-          <Article image="feature3.jpg" title="Feature Title 3" content="Feature content goes here." />
+        <Section title="New Features">
+          <Article image="meal_plan.jpg" title="Meal Planner" content="Introducing our new meal planner tool, designed to help you organize your weekly meals." width="200px" height="200px" />
+          <Article title="Cooking Tips & Tricks" content="Explore our ever-growing library of cooking tips and tricks from top chefs." image="cooking_tips.jpg" width="200px" height="200px" />
+          <Article image="rr.jpg" title="Recipe Roulette" content="Feeling adventurous? Try our Recipe Roulette and discover new dishes to try!" width="200px" height="200px" />
         </Section>
       </div>
     </div>
